@@ -9,16 +9,13 @@
       "args": [
         "-S", ".",
         "-B", "build",
-        "-G", "MinGW Makefiles",
         "-DCMAKE_BUILD_TYPE=Debug"
       ],
-      "problemMatcher": []
     },
     {
       "label": "build",
       "type": "shell",
-      "command": "cmake",
-      "args": ["--build", "build"],
+      "command": "cmake --build build",
       "dependsOn": "configure",
       "group": {
         "kind": "build",
